@@ -1,0 +1,107 @@
+/* root variables */
+:root {
+    --blueA: #589fb7;
+    --blueB: #225082;
+    --blueC: #a8def0;
+    --blueD: #e8f7fc;
+}
+
+/* main settings */
+* {
+    transition: 200ms;
+    -o-transition: 200ms;
+    -moz-transition: 200ms;
+    -webkit-transition: 200ms;
+    text-align: center;
+    font-family: segoe ui;
+}
+
+/* main */
+main {
+    padding: 50px 20%;
+}
+
+/* cards */
+main > img {
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid var(--blueA);
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+/* cards hover */
+main > img:hover {
+    background: var(--blueD);
+    opacity: 1.0;
+}
+
+/* cards active */
+main > img:active {
+    border: 2px solid black;
+}
+
+/* headers */
+.paddup {
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+/* headers */
+.paddup:hover {
+    opacity: 1.0;
+}
+
+/* play button */
+#play {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    color: var(--blueB);
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 2px var(--blueB);
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+/* play button hover */
+#play:hover {
+    background-color: var(--blueC);
+    cursor: pointer;
+    color: black;
+    opacity: 1.0;
+}
+
+/* play button active */
+#play:active {
+    background: white;
+    color: var(--blueA);
+}
+
+/* win text */
+#win {
+    color: var(--blueB);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+/* footer links */
+footer > a {
+    text-decoration: none;
+}
+
+/* footer icons */
+footer > a > img {
+    height: 50px;
+    width: 50px;
+    opacity: 0.6;
+}
+
+/* footer icons hover */
+footer > a > img:hover {
+    opacity: 1.0;
+}

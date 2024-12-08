@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--Meta Settings-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img1/" type="image/x-icon">
+
+    <!--Link Stylesheet-->
+    <link rel="stylesheet" href="mario.css">
+
+    <!--Title-->
+    <title>Mario Jump</title>
+</head>
+<body>
+    <!--Game-->
+    <audio src="audio/jump_song.mp3" class="audiojump"></audio>
+    <audio src="audio/game_over.mp3" class="gameover"></audio>
+    <div class="game-board">
+        <img src="img1/clouds.png" class="clouds">
+        <img src="img1/Tatooine.png" class="mario">
+        <img src="img1/pipe.png" class="pipe">
+    </div>
+    <p id="text-start">Para jogar, pressione qualquer tecla</p>
+    <!--Script-->
+    <script src="mario.js" onclick="rotinapular()"></script>
+</body>
+</html>

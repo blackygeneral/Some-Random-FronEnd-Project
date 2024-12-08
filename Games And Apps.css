@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('ProfileIcon.png'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-button, .sign-out-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover, .sign-out-button:hover {
+    background-color: #555;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.image-overlay:hover .overlay-text {
+    opacity: 1;
+}

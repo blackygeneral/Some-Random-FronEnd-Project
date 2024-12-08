@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
+
+body {
+  background-color: #1c2225;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  color: white;
+  font-family: "Moirai One", cursive;
+}
+
+.board-container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  grid-auto-rows: 0.6fr;
+}
+
+.board-container > h2 {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+.board-container h2 span {
+  font-family: "Comfortaa", cursive;
+}
+
+.board {
+  width: 540px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  background-color: #1c2225;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-auto-rows: 0.4fr 0.1fr 0.3fr;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.tic {
+  text-shadow: #ff206e -2px 3px;
+}
+
+.tac {
+  text-shadow: #fbff12 -2px 3px;
+}
+
+.toe {
+  text-shadow: #41ead4 -2px 3px;
+}
+
+#play {
+  background: #1c2225;
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  height: 130px;
+  font-size: 100px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x {
+  transition: text-shadow 400ms linear, color 400ms linear;
+}
+
+.o {
+  transition: text-shadow 400ms linear, color 400ms linear;
+}
+
+#play:hover .x {
+  text-shadow: #41ead4 -3px 5px;
+  color: #e41e63;
+}
+
+#play:hover .o {
+  text-shadow: #41ead4 -3px 5px;
+  color: #fbff12;
+}
+
+#play:hover {
+  cursor: pointer;
+}
+
+.column {
+  border: #727472 1px solid;
+  background: #1c2225;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  margin-top: 0;
+  cursor: pointer;
+  float: left;
+  font-size: 80px;
+  font-weight: 700;
+
+  transition: color 350ms linear;
+}
+
+.column:hover {
+  border: #727472 solid 3px;
+}
+
+.row {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+#return {
+  font-family: "Comfortaa", cursive;
+  background-color: #1c2225;
+  width: 180px;
+  height: 35px;
+  border: #727472 solid 2px;
+  border-radius: 4px;
+
+  transition: box-shadow 300ms linear;
+}
+
+#return:hover {
+  box-shadow: #41ead4 -5px 5px;
+}
+
+#gameover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms ease-in-out 550ms;
+  border: 1px solid #727472;
+  height: 260px;
+  z-index: 10;
+  min-width: 100%;
+  background: #1c2225;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#gameover > * {
+  font-family: "Comfortaa", cursive;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out 550ms;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#gameover.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#gameover > button {
+  background-color: #1c2225;
+  border-radius: 4px;
+  width: 180px;
+  height: 35px;
+  border: #727472 solid 1px;
+  transition: 300ms linear;
+
+  align-self: flex-start;
+}
+
+#gameover > button:hover {
+  box-shadow: #e41e63 -5px 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+form div * {
+  font-family: "Comfortaa", cursive;
+}
+
+form {
+  display: flex;
+  gap: 100px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  background: #1c2225;
+  outline: none;
+  border: solid #727472 1px;
+  border-radius: 5px;
+  padding: 6px;
+
+  transition: border 300ms ease-in;
+}
+
+input#p1:focus {
+  border: solid #e41e63 1px;
+}
+
+input#p2:focus {
+  border: solid #fbff12 1px;
+}

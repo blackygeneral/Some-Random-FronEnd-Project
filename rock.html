@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class="main">
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+        <h3 class="score-message" id="scoreMessage">
+          First to score 5 points wins the game
+        </h3>
+        <div class="scores-container">
+          <div class="score-box">
+            <div class="sign" id="playerSign">❔</div>
+            <p class="score" id="playerScore">Player: 0</p>
+          </div>
+          <div class="score-box">
+            <div class="sign" id="computerSign">❔</div>
+            <p class="score" id="computerScore">Computer: 0</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="sign">✊</div>
+        </button>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="sign">✋</div>
+        </button>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="sign">✌</div>
+        </button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        michalosman
+      </p>
+      <a href="https://github.com/michalosman" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="rock.js"></script>
+  </body>
+</html>

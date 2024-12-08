@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="GameOne.css" />
+    <script src="GameOne.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="home">
+      <h1>
+        <span class="tic">Tic</span> <span class="tac">Tac</span>
+        <span class="toe">Toe</span>
+      </h1>
+
+      <form action="" method="post">
+        <div>
+          <label for="p1">Player one:</label>
+          <input type="text" id="p1" name="p1" placeholder="Ahmad" />
+        </div>
+
+        <div>
+          <label for="p2">Player two:</label>
+          <input type="text" id="p2" name="p2" placeholder="Mahdy" />
+        </div>
+      </form>
+
+      <button id="play">
+        <span class="x">X</span><span class="o">O</span>
+      </button>
+    </div>
+    <div class="board-container">
+      <h2><span class="turn-name"></span> turn</h2>
+      <div class="board"></div>
+      <button id="return">Return</button>
+      <div id="gameover">
+        <h2 class="modalh2"><span id="winner"></span> won!</h2>
+        <button class="playAgain">Play again</button>
+      </div>
+      <div id="overlay"></div>
+    </div>
+  </body>

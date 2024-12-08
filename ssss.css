@@ -1,0 +1,49 @@
+#canvas
+{
+	border:1px solid grey;
+	cursor:pointer;
+	background-color:white;
+	margin-left:10px;
+    margin-top:67px;
+}
+body
+{
+	background-color:rgba(53,53,56,1) ;
+}
+.heading
+{
+	position:fixed;
+	top:-1%;
+	left:20px;
+	color:rgba(47,204,84,1);
+	font-family:sans-serif
+}
+.form
+{
+	position:fixed;
+	top:3%;
+	left:700px;
+	color:rgba(47,204,84,1);
+}
+.drawBtn
+{
+	width:90px;
+	height:32px;
+}
+.colorBtn , .fontBtn
+{
+	width:90px;
+	height:27px;
+}
+.eraseBtn
+{
+	width:90px;
+	height:32px;
+	background-color:#6b50c7;
+}
+.eraseAllBtn
+{
+	width:90px;
+	height:32px;
+	background-color:#D72E42;
+}

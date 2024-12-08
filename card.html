@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Memorey Game</title>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/game.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="card.css">
+
+    <!-- title icon -->
+    <link rel="shortcut icon" href="cards/0.png" type="image/x-icon">
+</head>
+
+<body onload="start();">
+    
+    <!-- header -->
+    <header>
+        <div class="paddup">
+            cards found:
+            <span id="limitOutput"></span>/<span id="scoreOutput">0</span>,
+            clicks:
+            <span id="clicks">0</span>
+        </div>
+
+        <div class="paddup">
+            <input onchange="changeLimit()" type="range" id="range" min="4" max="24">
+        </div>
+
+        <!-- <div class="paddup"> -->
+            <input type="button" value="Play" id="play" onclick="play_game();">
+        <!-- </div> -->
+
+        <div id="win"></div>
+    </header>
+
+    <!-- main -->
+    <main id="main"></main>
+
+    <!-- footer -->
+    <footer>
+        <a href="https://github.com/kggold4/memory-cards-js-game.git" target="_blank">
+            <img src="images/git.png" alt="git project"></a>
+        <a href="https://www.youtube.com/watch?v=o9RqpBvPfqA" target="_blank">
+            <img src="images/youtube.png" alt="git youtube"></a>
+    </footer>
+
+</body>
+
+</html>

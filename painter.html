@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paint</title>
+	<link href="ssss.css" rel="stylesheet">
+</head>
+<body>
+
+	<canvas id = "canvas" > </canvas>
+	<h1 class = "heading" > Pixel Painter </h1>
+	<form class = "form">
+		<input type="button" value="Draw" onclick="draw()" class = "drawBtn">
+		Color:
+		<input type="color" id="1" onchange="handleColorChng()" class="colorBtn" type="text" name="color" placeholder="color..">
+		Size:
+	    <input id="2" onkeyup="handleFontSize()" class="fontBtn" type="text" name="size" placeholder="font size..">
+	    <input type="button" value="Eraser" onclick="eraser()" class="eraseBtn">
+	 	<input type="button" value="Eraser All" onclick="eraseAll()" class="eraseAllBtn">
+	</form>
+
+</body>
+<script src="./index.js" > </script>
+</html>
